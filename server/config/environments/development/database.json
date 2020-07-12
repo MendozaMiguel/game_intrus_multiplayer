@@ -7,9 +7,9 @@
         "client": "mongo",
         "host": "cluster0.8rr5l.mongodb.net",
         "port": "27017",
-        "database": "server",
-        "username": "mendozamiguel",
-        "password": "Miguel93500",
+        "database": "${process.env.DATABASE_NAME || 'strapi'}",
+        "username": "${process.env.DATABASE_USERNAME || ''}",
+        "password": "${process.env.DATABASE_PASSWORD || ''}",
         "srv": true
       },
       "options": {
