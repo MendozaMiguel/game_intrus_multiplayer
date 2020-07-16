@@ -3,10 +3,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
   {
     path: 'home',
-    loadChildren: './home/home-routing.module#HomeModule'
+    loadChildren: './home/home.module#HomeModule'
   },
   // {
   //   path: "**",
@@ -15,9 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    preloadingStrategy: PreloadAllModules
-  })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: [],
 })
