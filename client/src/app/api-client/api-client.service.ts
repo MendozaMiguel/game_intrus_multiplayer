@@ -3,12 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { map, catchError } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 
-
 const prefix = '/api/';
 
-
 export const API_URI_RATINGS: string = prefix + 'ratings';
-
 
 @Injectable()
 
