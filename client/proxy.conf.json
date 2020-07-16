@@ -1,0 +1,44 @@
+{
+  "/api": {
+    "target": "http://localhost:1337",
+    "secure": false,
+    "pathRewrite": {
+      "^/": ""
+    }
+  },
+  "/connect": {
+    "target": "http://localhost:1337",
+    "secure": false,
+    "pathRewrite": {
+      "^/": ""
+    }
+  },
+  "/auth": {
+    "target": "http://localhost:1337",
+    "secure": false,
+    "pathRewrite": {
+      "^/": ""
+    }
+  },
+  "/auth/forgot-password": {
+    "target": "http://localhost:1337",
+    "secure": false,
+    "pathRewrite": {
+      "^/": ""
+    }
+  },
+  "/auth/reset-password": {
+    "target": "http://localhost:1337",
+    "secure": false,
+    "pathRewrite": {
+      "^/": ""
+    }
+  },
+  "/user": {
+    "target": "http://localhost:1337",
+    "secure": false,
+    "pathRewrite": {
+      "^/": ""
+    }
+  }
+}
