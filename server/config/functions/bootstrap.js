@@ -12,9 +12,12 @@ module.exports = cb => {
   // import socket io
   var io = require('socket.io')(strapi.server);
   // listen for user connection
-  io.on('connection', function (socket) {
+  io.on('connection', (socket) => {
     // send message on user connection
     console.log('user connected');
+    socket.on('new-message', (message) => {
+      socket.broadcast.emit('new-message', message)
+    });
     // listen for user diconnect
     socket.on('disconnect', () => console.log('a user disconnected'));
   });
