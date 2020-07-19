@@ -1,7 +1,7 @@
 import { API_URI_RATINGS } from './../api-client/api-client.service';
 import { Component, OnInit } from '@angular/core';
 import { ApiClientService } from '../api-client/api-client.service';
-import { ChatService } from '../chat.service.ts/chat.service';
+import { ChatService } from '../chat-service/chat.service';
 
 @Component({
   selector: 'app-home',
