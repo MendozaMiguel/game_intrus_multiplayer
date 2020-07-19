@@ -16,7 +16,7 @@ module.exports = cb => {
     // send message on user connection
     console.log('user connected');
     socket.on('new-message', (message) => {
-      socket.broadcast.emit('new-message', message)
+      io.sockets.emit('new-message', message)
     });
     // listen for user diconnect
     socket.on('disconnect', () => console.log('a user disconnected'));
