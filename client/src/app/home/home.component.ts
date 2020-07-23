@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     // this.apiClientService.get(API_URI_RATINGS).toPromise().then(data => {
     //   console.log('Ratings : ', data);
     // });
-
+    this.chatService.getUserConnected();
     this.chatService
       .getMessages()
       .subscribe((message: string) => {
