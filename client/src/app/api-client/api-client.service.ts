@@ -6,6 +6,7 @@ import { Observable, throwError } from 'rxjs';
 const prefix = '/api/';
 
 export const API_URI_RATINGS: string = prefix + 'ratings';
+export const API_URI_USER = 'users';
 
 @Injectable()
 
