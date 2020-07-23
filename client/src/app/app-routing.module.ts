@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomeModule'
   },
+  {
+    path: 'room/:id',
+    loadChildren: './room/room.module#RoomModule'
+  },
   // {
   //   path: "**",
   //   redirectTo: "not-found",
@@ -15,7 +19,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule],
   providers: [],
 })
